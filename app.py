@@ -16,7 +16,8 @@ def main():
 def submit_number():
     number = request.form['number']
     formatted_number = "+1" + number # Switch to your country code of choice
-    client.messages.create(to=formatted_number, from_ = twilio_number, body = "Message of your choice to text people.") # Replace body with your message of choice
+    client.messages.create(to=formatted_number, from_ = twilio_number, 
+    	body = "A C error walks into a bar. The bartender says, \"We don't serve bugs here.\" The C error, \"Segfault.\"") # Replace body with your message of choice
     return redirect('/messages/')
   
 @app.route("/messages/")
