@@ -5,8 +5,8 @@ from flask import request, redirect
 from twilio.rest import TwilioRestClient 
 
 app = Flask(__name__) # Creating the Flask app
-client = TwilioRestClient ('TWILIO_ACCOUNT_SID = os.environ['TWILIO_ACCOUNT_SID']', 'TWILIO_AUTH_TOKEN = os.environ['TWILIO_AUTH_TOKEN']') # Paste in your AccountSID and AuthToken here
-twilio_number = "+1234567890" # Replace with your Twilio number
+client = TwilioRestClient ('AC4f664d9c5755a9d50c0faab37cf119f4', '28972db267c44d9bbd6a0171e67aad5d') # Paste in your AccountSID and AuthToken here
+twilio_number = "+14152148623" # Replace with your Twilio number
 
 @app.route("/") # When you go to top page of app, this is what it will execute
 def main():
